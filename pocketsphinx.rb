@@ -1,3 +1,5 @@
+require "formula"
+
 class CmuPocketsphinx < Formula
   desc "Lightweight speech recognition engine for mobile devices"
   homepage "http://cmusphinx.sourceforge.net/"
@@ -14,7 +16,7 @@ class CmuPocketsphinx < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "cmu-sphinxbase"
+  depends_on "dinal24/cmu-sphinx/sphinxbase"
 
   def install
     if build.head?

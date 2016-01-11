@@ -1,3 +1,5 @@
+require "formula"
+
 class CmuSphinxbase < Formula
   desc "Lightweight speech recognition engine for mobile devices"
   homepage "http://cmusphinx.sourceforge.net/"
